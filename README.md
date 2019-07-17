@@ -2,7 +2,7 @@
 Node app using Express and MongoDb that implements a set of REST APIs allowing CRUD functionality for an employee resource. 
 This app also has a test client for performing CRUD operations on employee database.
 
-##Getting Started
+## Getting Started
 
 Download the project and run the following commands. We are using express as our web application framework, express-handlebars for test-client templates and mongoDb for storage.
 
@@ -35,9 +35,9 @@ This API has 2 endpoints
 1. http://localhost:3000/api/employees - Allows interaction with employees database for performing CRUD operations
 2. http://localhost:3000/employees - Provides a USER Interface/Test Client for this API
 
-##DETAILS
+## DETAILS
 
-##API endpoints for CRUD operations :
+## API endpoints for CRUD operations :
 
 **POST http://localhost:3000/api/employees**
 
@@ -114,7 +114,7 @@ EXAMPLE -
 http://localhost:3000/api/employees/5d2d49aa456665556075a9dc
 
 
-##TEST CLIENT ENDPOINTS
+## TEST CLIENT ENDPOINTS
 
 I built a test-client for learning more about express-handlebars and for conveniently interacting with employee database.
 
