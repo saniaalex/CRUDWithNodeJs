@@ -116,7 +116,7 @@ http://localhost:3000/api/employees/5d2d49aa456665556075a9dc
 
 ## TEST CLIENT ENDPOINTS  
 
-I built a test-client for learning more about express-handlebars and for conveniently interacting with employee database.
+I built a test-client for learning more about express-handlebars and for conveniently interacting with employee database. This does not consume the API endpoints above directly, but instead is a separate entity. In production environment, this client would consume the API endpoints above.
 
 POST http://localhost:3000/employees
 
