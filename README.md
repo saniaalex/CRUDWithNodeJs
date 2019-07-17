@@ -18,7 +18,7 @@ $ npm install mongoose
 Next, for starting mongo database server -   
 Create a batch file with following commands and run it
 
-cd C:\Program Files\MongoDB\Server\5.6.4\bin
+cd C:\Program Files\MongoDB\Server\5.6.4\bin  
 mongod.exe --dbpath C:\Users\Username\mongo-data
 
 The above commands start mongoDb server and create a MongoDb Compass Community client  
