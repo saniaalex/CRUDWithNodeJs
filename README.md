@@ -1,16 +1,16 @@
-# CRUDWithNodeJs
+# CRUDWithNodeJs  
 Node app using Express and MongoDb that implements a set of REST APIs allowing CRUD functionality for an employee resource. 
 This app also has a test client for performing CRUD operations on employee database.
 
-## Getting Started
+## Getting Started  
 
 Download the project and run the following commands. We are using express as our web application framework, express-handlebars for test-client templates and mongoDb for storage.
 
-**Installation**
+**Installation**  
 $ npm install  
 This should install all required node modules
 
-**Database Setup**
+**Database Setup**  
 The above installation should install mongoose and all other dependent modules.   
 In case of issues, command for installing mongoose-  
 $ npm install mongoose
@@ -25,14 +25,14 @@ The above commands start mongoDb server and create a MongoDb Compass Community c
 1. Open the client and crerate a database called EmployeeDatabase  
 2. Create a collection called Employees  
 
-The above database will be used by our application
+The above database will be used by our application  
 
-**Launching the application**
-$node server.js
+**Launching the application**  
+$node server.js  
 This runs the startup script and starts the node server on port 3000.
 
-This API has 2 endpoints
-1. http://localhost:3000/api/employees - Allows interaction with employees database for performing CRUD operations
+This API has 2 endpoints  
+1. http://localhost:3000/api/employees - Allows interaction with employees database for performing CRUD operations  
 2. http://localhost:3000/employees - Provides a USER Interface/Test Client for this API  
 
 ## DETAILS  
@@ -63,8 +63,8 @@ VALIDATION/Bad requests
 [{"firstName":"Sania","lastName":"Alex","hireDate":"2019-07","role":"Developer"}, {"firstName":"John","lastName":"Mathew","hireDate":"2019-07-12","role":"lackey"}]
 
 
-The employee object created should have favorite joke and quotes from the below API's  
-     https://ron-swanson-quotes.herokuapp.com/v2/quotes
+The employee object created should have favorite joke and quotes from the below API's    
+     https://ron-swanson-quotes.herokuapp.com/v2/quotes  
      https://icanhazdadjoke.com
      
 **Validation**  
@@ -114,7 +114,7 @@ EXAMPLE -
 http://localhost:3000/api/employees/5d2d49aa456665556075a9dc  
 
 
-## TEST CLIENT ENDPOINTS
+## TEST CLIENT ENDPOINTS  
 
 I built a test-client for learning more about express-handlebars and for conveniently interacting with employee database.
 
