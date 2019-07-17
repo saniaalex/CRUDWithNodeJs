@@ -1,0 +1,37 @@
+<h3>{{viewTitle}}</h3>
+
+<form action="/employees" method="POST" autocomplete="off">
+    <input type="hidden" name="_id" value="{{employee._id}}">
+    <div class="form-group">
+        <label>First Name</label>
+        <input type="text" class="form-control" name="firstName" placeholder="First Name" value="{{employee.firstName}}">
+        <div class="text-danger">
+            {{employee.firstNameError}}</div>
+    </div>
+     <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" class="form-control" name="lastName" placeholder="Last Name" value="{{employee.lastName}}">
+        <div class="text-danger">
+            {{employee.lastNameError}}</div>
+    </div>
+    <div class="form-group">
+        <label>Hire Date</label>
+        {{#if employee._id}}
+           <input type="text" class="form-control" name="hireDate" placeholder="YYYY-MM-DD" title="YYYY-MM-DD" value="{{formatTime employee.hireDate "YYYY-MM-DD"}}">
+        {{else}}
+            <input type="text" class="form-control" name="hireDate" placeholder="YYYY-MM-DD" title="YYYY-MM-DD" value="{{employee.hireDate}}">
+       {{/if}}
+        <div class="text-danger">
+            {{employee.hireDateError}}</div>
+    </div>
+        <div class="form-group">
+        <label>Role</label>
+        <input type="text" class="form-control" name="role" placeholder="Role" value="{{employee.role}}">
+        <div class="text-danger">
+            {{employee.roleError}}</div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info">Submit</button>
+        <a class="btn btn-secondary" href="/employees/list"> View All</a>
+    </div>
+</form>
